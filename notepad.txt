@@ -1,0 +1,66 @@
+        CONTANT FROM BASE . HTML
+        
+        <!-- <h3 class="pcolr">My Site</h3>
+        <button class="length" type="button" class="btn btn-primary"><a href="{% url 'home' %}">Home</a></button>
+        {% if user.is_authenticated %}
+        <button class="length" type="button" class="btn btn-success"><a href="{% url 'password_change' %}">Password Change</a></button>
+        <button class="length" type="button" class="btn btn-danger"><a href="{% url 'employ' %}">Add Employ</a></button>
+        <button class="length" type="button" class="btn btn-danger"><a href="{% url 'log_out' %}">Logout</a></button>
+        {% else %}
+        <button class="length" type="button" class="btn btn-secondary"><a href="{% url 'sign1_up' %}">SignUp</a></button>
+        <button class="length" type="button" class="btn btn-warning"><a href="{% url 'log_in' %}">Login</a></button>
+        {% endif %}
+
+        {% block body_block %}
+    
+
+        {% endblock %} -->
+
+
+DROPDOWN BOX
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle txt1" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item txt1" href="#">Action</a>
+                <a class="dropdown-item txt1" href="#">Another action</a>
+                <a class="dropdown-item txt1" href="#">Something else here</a>
+                <a class="dropdown-item txt1" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item txt1" href="#">Separated link</a>
+              </div>
+            </li>
+
+
+BUTTON CODE
+
+    <!-- <div class="container">
+        <div class="row">
+            {% if user.is_authenticated %} 
+
+            <div class="col-lg-3">
+                <button  type="button" class="btn btn-primary btn-block "><a href="{% url 'home' %}">Home</a></button>
+            </div>
+            <div class="col-lg-3">
+                <button btnsize type="button" class="btn btn-success btn-block " ><a href="{% url 'password_change' %}">Password Change</a></button>
+            </div>
+            <div class="col-lg-3">
+                <button btnsize type="button" class="btn btn-danger  btn-block "><a href="{% url 'employ' %}">Add Employ</a></button>
+            </div>
+            <div class="col-lg-3">
+                <button btnsize type="button" class="btn btn-s  btn-block "><a href="{% url 'log_out' %}">Logout</a></button>
+            </div>
+            {% else %}
+            <div class="col-lg-4">
+                <button  type="button" class="btn btn-primary btn-block "><a href="{% url 'home' %}">Home</a></button>
+            </div>
+            <div class="col-lg-4">
+                <button btnsize type="button" class="btn btn-secondary  btn-block "><a href="{% url 'sign1_up' %}">SignUp</a></button>
+            </div>
+            <div class="col-lg-4">
+                <button btnsize type="button" class="btn btn-warning  btn-block "><a href="{% url 'log_in' %}">Login</a></button>
+            </div>
+            {% endif %}
+        </div>
+    </div> -->

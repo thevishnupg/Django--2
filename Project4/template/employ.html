@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>helllo {{user.username}}</h3>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="">EmployID:</label> <input type="text" name="eid"><br>
+        <label for="">Name:</label> <input type="text" name="ename"><br>
+        <label for="">Company:</label> <input type="text" name="ecom"><br>
+        <label for="">Designation:</label> <input type="text" name="edesig"><br>
+        <label for="">Place:</label> <input type="text" name="eplace"><br>
+        <label for="">Salary:</label> <input type="text" name="esal"><br>
+        <input type="submit" value="Submit"><br>
+
+    </form>
+    
+</body>
+</html>
