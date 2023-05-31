@@ -18,5 +18,20 @@ body{
     background-color: darkgray;
 }
 .pcolor{
-    color: red;
+    font-size: large;
+    color: beige;
+}
+img{
+    width: 100%;
+}
+
+.bgimg{
+    background-image: url(../img/home2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient rgba(255,0,0,0.45);
+}
+.im-round{
+    border-radius: 50%;
 }

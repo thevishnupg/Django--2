@@ -1,4 +1,4 @@
-        CONTANT FROM BASE . HTML
+    CONTANT FROM BASE . HTML
         
         <!-- <h3 class="pcolr">My Site</h3>
         <button class="length" type="button" class="btn btn-primary"><a href="{% url 'home' %}">Home</a></button>
@@ -64,3 +64,28 @@ BUTTON CODE
             {% endif %}
         </div>
     </div> -->
+
+
+FROM METHODE = 'POST'
+
+<TABLE>
+{{FORM. AS_TABLE}}  if you want the form in table format.
+{{FORM. AS_UL}}     if you want the form in list format
+{{FORM. AS_OL}}     """
+</TABLE>
+
+
+CONTANT FROM HOME . HTML
+
+    <!-- {% if user.is_authenticated %}
+    <h4>Hello  {{ user.username }}</h3>
+    <img src="{% static 'img/home.webp' %}" alt="Nature" width="300px" height="300px"> 
+    <button class="length" type="button" class="btn btn-danger"><a href="{% url 'emp_details' %}">Employ Details</a></button> -->
+    <!-- <button type="button"><a href="{% url 'emp_details' %}"></a></button> -->
+    <!-- {% else %}
+    <h3>Visiter</h3>
+
+    {% endif %}
+
+
+    {% endblock %} -->

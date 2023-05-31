@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
-
-
+{% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,21 +11,37 @@
 </head>
 <body>
     {% block body_block %}
-
-
-    <h3>Welcome To Home Page</h3>
-    
-
-    {% if user.is_authenticated %}
-    <h4>Hello  {{ user.username }}</h3>
-    <button class="length" type="button" class="btn btn-danger"><a href="{% url 'emp_details' %}">Employ Details</a></button>
-    <!-- <button type="button"><a href="{% url 'emp_details' %}"></a></button> -->
-    {% else %}
-    <h3>Visiter</h3>
-
-    {% endif %}
-
-
+    <!-- <div class="bgimg "> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pt-3">
+                    <h2 class="text-center">Welcome To Home Page</h2>
+                </div>
+                {% if user.is_authenticated %} 
+        
+                <div class="col-12 text-center pt-5">
+                    <h5>Hello  {{ user.username }},</h5>
+                </div>
+                <div class="col-12">
+                    <p class="pcolor">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, ducimus officia quasi nobis aut amet magnam magni corporis impedit. Ipsam nihil maiores exercitationem voluptatum soluta libero eos, excepturi corporis explicabo officiis perspiciatis adipisci repudiandae nisi nemo natus! Dolores magnam quas ipsa animi illo voluptate exercitationem quia debitis tenetur quam? Porro cum molestias, est, voluptas at harum accusamus, perferendis aperiam quaerat excepturi minima ipsam modi voluptatum necessitatibus. Blanditiis veniam perspiciatis quasi quo ex quia omnis consectetur est ratione voluptatum dolorem accusamus dignissimos illo, eligendi excepturi reprehenderit? Maxime unde nesciunt voluptatem fuga eveniet voluptates. Illo excepturi cumque amet, natus debitis voluptatibus commodi similique voluptas quasi enim architecto ea ex pariatur ipsum et! Excepturi obcaecati quia ab? Reiciendis beatae qui explicabo ea corporis quia soluta quis facilis debitis laboriosam tenetur molestiae officia tempore quasi, neque expedita laudantium minus dicta fugit modi culpa impedit veritatis. Inventore doloribus necessitatibus nemo doloremque reiciendis! Nesciunt autem asperiores unde soluta molestiae possimus, ea iusto dolores iure, porro consequatur deleniti ex atque adipisci esse voluptates? Harum, inventore? Ut quia iusto dolore reprehenderit nam dolor asperiores blanditiis error! Animi praesentium voluptatem ab nulla temporibus aperiam repellat laboriosam necessitatibus blanditiis at! Ullam ut impedit consequuntur molestias. Ratione voluptates quas at illum.
+                    </p>
+                    <button type="button" class="btn btn-secondary  "><a href="{% url 'emp_details' %}">Show Employ Details</a></button>
+                </div>
+                {% else %}
+                <div class="col-lg-6 pt-3 ">
+                    <h5> If you not yet signup, Sign Asap!!!</h5>
+                    <button type="button" class="btn btn-secondary  "><a href="{% url 'sign1_up' %}">SignUp</a></button>
+                </div>
+                <div class="col-lg-6 pt-3 ">
+                    
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    <!-- </div> -->
     {% endblock %}
+
+
 </body>
 </html>
