@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Bootstrap css link  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Css local link   -->
+    <link rel="stylesheet" href="{% static 'css/style_1.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <table>
+                    <tr>
+                      <th>EmployID</th>
+                      <th>Name</th>
+                      <th>Company</th>
+                      <th>Designation</th>
+                      <th>Place</th>
+                      <th>Salary</th>
+                    </tr>
+                    <tr>
+                      <td>{{data.emp_id}}</td>
+                      <td>{{data.name}}</td>
+                      <td> {{data.company}}</td>
+                      <td>{{data.designation}}</td>
+                      <td>{{data.place}}</td>
+                      <td>{{data.salary}}</td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -4,6 +4,7 @@ from django.contrib.auth import authenticate,login,logout
 from django.http import HttpResponse
 from AuthApp.models import CustomUser,EmployDetail
 from AuthApp.form import CustomUserCreationForm
+from AuthApp.form import EmployForm
 
 # Create your views here.
 
@@ -61,8 +62,23 @@ def emp_details(request):
     return render(request,'employ_details.html',{'ob':obj})
 
 
-# def pass_change(request):
-#     pass
+def view_data(request,p):
+    d = EmployDetail.objects.get(pk=p)
+    return render(request,'single_employ_details.html',{'data':d})
 
-# def pass_change_done(request):
-#     return render(request,'pass_ch_done.html')
+
+def edit_data(request,p):
+    b = EmployDetail.objects.get(pk=p)
+    form = EmployForm(instance=b)
+    if request.method == 'POST':
+        form = EmployForm(request.POST,instance=b)
+
+        if(form.is_valid()):
+            form.save()
+            return emp_details(request)
+    return render(request,'edit.html',{'form':form})
+
+def delete_data(request,p):
+    b = EmployDetail.objects.get(pk=p)
+    b.delete()
+    return emp_details(request)

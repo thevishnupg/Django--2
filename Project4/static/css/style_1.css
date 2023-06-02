@@ -35,3 +35,10 @@ img{
 .im-round{
     border-radius: 50%;
 }
+
+/* Set border for table */
+
+
+table,th,td{
+    border: 1px solid black;
+}
