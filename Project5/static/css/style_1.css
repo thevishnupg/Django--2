@@ -1,0 +1,10 @@
+.cover_image{
+    width: 300px;
+    height: 300px;
+}
+body{
+    background-color: darkgoldenrod;
+}
+.txt1{
+    color: black;
+}

@@ -10,16 +10,17 @@ def home(request):
 def upload(request):
     objform =BookForm()
     if request.method == "POST":
-        objform = BookForm(request.POST)  
+        objform = BookForm(request.POST,request.FILES)  
         if objform.is_valid():
             objform.save()
-            obj2 = Book.objects.all()
-            return render(request,'show.html',{'o2':obj2})
+            obj = Book.objects.all()
+            return render(request,'show.html',{'s':obj})
         else:
             objform = BookForm()
     return render(request,'upload.html',{'form':objform})
 
 
 def show(request):
-    return render(request,'show.html')
+    obj = Book.objects.all()
+    return render(request,'show.html',{'s':obj})
 

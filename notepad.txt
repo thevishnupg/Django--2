@@ -89,3 +89,44 @@ CONTANT FROM HOME . HTML
 
 
     {% endblock %} -->
+
+
+CONTANT FROM EMPLOY_DETAILS . HTML
+        
+<!--     
+    EmployID : {{o.emp_id}} <br>
+    Name: {{o.name}} <br>
+    Company : {{o.company}} <br>
+    Designation : {{o.designation}} <br>
+    Place : {{o.place}} <br>
+    Salary : {{o.salary}} <br> <br> <br> -->
+
+        <td><button><a href="{% url '#' %}">Update</a></button></td>
+        <td><button><a href="{% url '#' %}">Delete</a></button></td>
+
+CONTANT FROM SINGLE_EMPLOY_DETAILS . HTML
+
+            <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <table>
+                    <tr>
+                      <th>EmployID</th>
+                      <th>Name</th>
+                      <th>Company</th>
+                      <th>Designation</th>
+                      <th>Place</th>
+                      <th>Salary</th>
+                    </tr>
+                    <tr>
+                      <td>{{data.emp_id}}</td>
+                      <td>{{data.name}}</td>
+                      <td> {{data.company}}</td>
+                      <td>{{data.designation}}</td>
+                      <td>{{data.place}}</td>
+                      <td>{{data.salary}}</td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div>
